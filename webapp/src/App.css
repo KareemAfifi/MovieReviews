@@ -1,0 +1,31 @@
+/**
+ * The .container wraps your whole content area.
+ * Use it to position the overall page how you'd like on the screen.
+ */
+ .container {
+  width: 90%;
+}
+
+/**
+ * This line creates a rule that only applies to screens bigger than 540px
+ * i.e. tablets and desktops (not mobiles) 
+ * 
+ * By placing this after the rule above, you can override the settings.
+ * i.e. the width will be 90% on mobiles (from above) but only 80% on tablets.
+ */
+@media only screen and (min-width: 540px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/**
+ * This line creates a rule that only applies to screens bigger than 960px
+ * i.e. desktops (not mobiles or tablets) 
+ */
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}

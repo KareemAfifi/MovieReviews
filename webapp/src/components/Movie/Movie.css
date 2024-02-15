@@ -1,0 +1,35 @@
+.movie {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+/** Tablets and desktops. See App.css for full explanation. */
+@media only screen and (min-width: 540px) {
+  .movie {
+    max-width: 33%;
+  }
+}
+
+/** Desktops. See App.css for full explanation. */
+@media only screen and (min-width: 960px) {
+  .movie {
+    max-width: 25%;
+  }
+}
+
+/** Don't worry about this flex line. It just makes your grid line up
+  nicely even when titles are different lengths. */
+.movie-title {
+  flex: 1 0 auto;
+}
+
+/**
+ * Automatically resizes the cover images.
+ *
+ * Extra credit - Can you make it so that clicking a cover loads the full sized cover in a new tab?
+ */
+.cover {
+  max-width: 100%;
+  height: auto;
+}
